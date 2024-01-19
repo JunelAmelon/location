@@ -1,0 +1,187 @@
+body{
+    background-color: rgb(206, 206, 206);
+
+}
+.main {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    margin-top: 1cm;
+  }
+
+.cardBox {
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  
+.cardBox .card 
+{
+    position: relative;
+    background: #fff;
+    height: 10cm;
+    width: 8cm;
+    padding: 30px;
+    border-radius: 20px;
+    display: block;
+    justify-content: space-between;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.carName{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0.2cm;
+}
+.infosCars{
+    position: absolute;
+    display: block;
+}
+
+.cardBox .card .infosCars i{
+    margin-right: 0.9cm;
+    color: #ea1f33;
+}
+
+.cardBox .card .infosCars span{
+    color: #999;
+}
+
+.louer{
+    background-color: #ea1f33;
+    border-radius: 20px;
+    height: 1cm;
+    width: 2cm;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 6px;
+    color: #fff;
+    float: inline-end;
+}
+.navigation {
+    position: fixed;
+    width: 280px;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  .navigation.active {
+    width: 80px;
+  
+  }
+  
+  .navigation ul {
+    position: absolute;
+    top: 2cm;
+    left: -1cm;
+    width: 100%;
+  }
+  
+  .navigation ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+  
+  .navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+  }
+  .navigation ul li:hover a,
+  .navigation ul li.hovered a {
+    color: #ea1f33;
+    border-radius: 25px;
+    transition: .5s ease-in;
+    width: 7cm;
+  }
+  
+  .navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 75px;
+    text-align: center;
+  }
+  .navigation ul li a .icon ion-icon {
+    font-size: 1.75rem;
+  }
+  
+  .navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+  }
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    width: 6.5cm;
+    margin-top: 1cm;
+    margin-left: 1.5cm;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  .categorie {
+    margin-left: 2cm; 
+    font-size: 15px;
+    display: none;
+  }
+  .categorie a {
+    color: #ea1f33;
+    margin-bottom: 1.5cm;
+
+  }
+  .recherche{
+    float: right;
+  }
+  
+  @media (max-width: 700px) {
+    .main {
+      margin-left: -4cm;
+    }
+    .cardBox {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .navigation{
+      display: none;
+    }
+    .recherche{
+      display: flex; 
+      justify-content:center;
+      justify-items:center;
+    }
+
+  }
+
+  @media (max-width: 991px) {
+
+   
+    .cardBox {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+

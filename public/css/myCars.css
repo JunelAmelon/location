@@ -1,0 +1,74 @@
+.cardBox {
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    font-size: 15px;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  
+.cardBox .card 
+{
+    position: relative;
+    background: #fff;
+    height: 10cm;
+    width: 8cm;
+    padding: 30px;
+    border-radius: 20px;
+    display: block;
+    justify-content: space-between;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.carName{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0.2cm;
+}
+.infosCars{
+    position: absolute;
+    display: block;
+}
+
+.cardBox .card .infosCars i{
+    margin-right: 0.1cm;
+    color: #00b371;
+}
+
+.cardBox .card .infosCars span{
+    color: #999;
+}
+.topbar a{
+    text-decoration: none;
+    background-color: #000;
+    border-radius: 20px;
+    height: 1cm;
+    width: 2cm;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 6px;
+    color: #fff;
+}
+.operation:hover, .topbar a:hover{
+    background-color: #00b371;
+}
+.operation{
+    text-decoration: none;
+    margin-left: 0.5cm;
+    background-color: #00b371;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+  @media (max-width: 700px) {
+
+    .cardBox {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    
+  }
